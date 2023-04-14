@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Gynomic</string>
+    <string-array name='contact'>
+        <item>Josiah</item>
+        <item>Jame</item>
+        <item>Lorna</item>
+        <item>Moses</item>
+        <item>Victoria</item>
+        <item>Tapiwa</item>
+        <item>Ephraim</item>
+        <item>Abdi</item>
+        <item>Michelle</item>
+        <item>Ryan</item>
+    </string-array>
+</resources>

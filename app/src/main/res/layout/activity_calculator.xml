@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <TextView
+        android:id="@+id/mTvTitle1"
+        android:layout_width="221dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="4dp"
+        android:text="Calculator
+"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mTvAnswer"
+        android:layout_width="251dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="119dp"
+        android:layout_marginBottom="117dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/mEdtFNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/mTvTitle1" />
+
+    <EditText
+        android:id="@+id/mEdtFNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="247dp"
+        android:ems="10"
+        android:hint="Enter First Num"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/mEdtSNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:hint="Enter Second Num"
+        android:inputType="numberDecimal"
+        app:layout_constraintStart_toStartOf="@+id/mEdtFNum"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtFNum" />
+
+    <Button
+        android:id="@+id/mBtnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="+"
+        app:layout_constraintEnd_toEndOf="@+id/mBtnMulti"
+        app:layout_constraintStart_toStartOf="@+id/mBtnMulti"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtSNum" />
+
+    <Button
+        android:id="@+id/mBtnSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="63dp"
+        android:text="-"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mEdtSNum" />
+
+    <Button
+        android:id="@+id/mBtnMulti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="45dp"
+        android:text="*"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mBtnAdd" />
+
+    <Button
+        android:id="@+id/mBtnDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="65dp"
+        android:text="/"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mBtnSub" />
+</androidx.constraintlayout.widget.ConstraintLayout>
